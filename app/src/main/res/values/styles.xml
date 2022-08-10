@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base Button -->
+
+    <style name="Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:textAppearance">@style/ButtonText</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="ButtonText" parent="@android:style/TextAppearance" />
+
+    <!-- Button Sizes -->
+
+    <style name="Button.Large">
+        <item name="cornerRadius">@dimen/radius_12dp</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="android:paddingTop">@dimen/padding_12dp</item>
+        <item name="android:paddingBottom">@dimen/padding_12dp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+    </style>
+
+    <style name="Button.Small">
+        <item name="cornerRadius">@dimen/radius_8dp</item>
+        <item name="android:textSize">@dimen/text_size_13sp</item>
+        <item name="android:paddingTop">@dimen/padding_6dp</item>
+        <item name="android:paddingBottom">@dimen/padding_6dp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+    </style>
+
+    <style name="Button.XSmall" tools:ignore="UnusedResources">
+        <item name="cornerRadius">@dimen/radius_6dp</item>
+        <item name="android:textSize">@dimen/text_size_12sp</item>
+        <item name="android:paddingTop">@dimen/padding_4dp</item>
+        <item name="android:paddingBottom">@dimen/padding_4dp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <!-- Button Variants -->
+
+    <style name="Button.Large.Primary">
+        <item name="backgroundTint">@color/bg_primary_button</item>
+        <item name="iconTint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Button.Large.Red">
+        <item name="backgroundTint">@color/red</item>
+        <item name="iconTint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Button.Large.Green">
+        <item name="backgroundTint">@color/bg_finance_button</item>
+        <item name="iconTint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Button.Large.Yellow">
+        <item name="backgroundTint">@color/bg_finance_yellow_button</item>
+        <item name="iconTint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Button.Large.White">
+        <item name="backgroundTint">@color/white</item>
+        <item name="iconTint">@color/text_color_white_button</item>
+        <item name="android:textColor">@color/text_color_white_button</item>
+    </style>
+
+    <style name="Button.Large.White.PrimaryText">
+        <item name="backgroundTint">@color/white</item>
+        <item name="iconTint">@color/text_color_white_button</item>
+        <item name="android:textColor">@color/primary_purple</item>
+    </style>
+
+    <style name="Button.Large.Gray">
+        <item name="backgroundTint">@color/gray</item>
+        <item name="iconTint">@color/text_color_gray_button</item>
+        <item name="android:textColor">@color/text_color_gray_button</item>
+    </style>
+
+    <style name="Button.Small.Primary">
+        <item name="backgroundTint">@color/bg_primary_button</item>
+        <item name="iconTint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Button.Small.Green">
+        <item name="backgroundTint">@color/bg_finance_button</item>
+        <item name="iconTint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Button.Small.White">
+        <item name="backgroundTint">@color/white</item>
+        <item name="iconTint">@color/text_color_white_button</item>
+        <item name="android:textColor">@color/text_color_white_button</item>
+    </style>
+
+    <style name="Button.Small.Gray">
+        <item name="backgroundTint">@color/gray</item>
+        <item name="iconTint">@color/text_color_gray_button</item>
+        <item name="android:textColor">@color/text_color_gray_button</item>
+    </style>
+
+    <style name="Button.Small.Red">
+        <item name="backgroundTint">@color/red</item>
+        <item name="iconTint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Button.XSmall.Primary" tools:ignore="UnusedResources">
+        <item name="backgroundTint">@color/bg_primary_button</item>
+        <item name="iconTint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Button.XSmall.Green" tools:ignore="UnusedResources">
+        <item name="backgroundTint">@color/bg_finance_button</item>
+        <item name="iconTint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Button.XSmall.White" tools:ignore="UnusedResources">
+        <item name="backgroundTint">@color/white</item>
+        <item name="iconTint">@color/text_color_white_button</item>
+        <item name="android:textColor">@color/text_color_white_button</item>
+    </style>
+
+    <style name="Button.XSmall.Gray" tools:ignore="UnusedResources">
+        <item name="backgroundTint">@color/gray</item>
+        <item name="iconTint">@color/text_color_gray_button</item>
+        <item name="android:textColor">@color/text_color_gray_button</item>
+    </style>
+
+    <style name="TransparentEditTextStyle">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:textColorHint">@color/mid_gray</item>
+        <item name="android:inputType">numberSigned|numberDecimal</item>
+        <item name="android:textSize">@dimen/text_size_48sp</item>
+        <item name="android:fontFeatureSettings">pnum</item>
+    </style>
+
+    <!--region TextView Styles -->
+
+    <style name="LargeTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/text_size_34sp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:lineSpacingExtra">@dimen/spacing_extra_large_title</item>
+        <item name="android:fontFeatureSettings">pnum</item>
+    </style>
+
+    <style name="LargeTitleMedium" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/text_size_34sp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:lineSpacingExtra">@dimen/spacing_extra_large_title</item>
+        <item name="android:fontFeatureSettings">pnum</item>
+    </style>
+
+    <style name="Title1" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/text_size_28sp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:lineSpacingExtra">@dimen/spacing_extra_title1</item>
+        <item name="android:fontFeatureSettings">pnum</item>
+    </style>
+
+    <style name="Title1Medium" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/text_size_28sp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:lineSpacingExtra">@dimen/spacing_extra_title1</item>
+        <item name="android:fontFeatureSettings">pnum</item>
+    </style>
+
+    <style name="Title2" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/text_size_22sp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:lineSpacingExtra">@dimen/spacing_extra_title2</item>
+        <item name="android:fontFeatureSettings">pnum</item>
+    </style>
+
+    <style name="Title2Medium" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/text_size_22sp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:lineSpacingExtra">@dimen/spacing_extra_title2</item>
+        <item name="android:fontFeatureSettings">pnum</item>
+    </style>
+
+    <style name="Title3" parent="Widget.AppCompat.TextView" tools:ignore="UnusedResources">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/text_size_20sp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:lineSpacingExtra">@dimen/spacing_extra_title3</item>
+        <item name="android:letterSpacing">@dimen/letter_spacing_title3</item>
+        <item name="android:fontFeatureSettings">pnum</item>
+    </style>
+
+    <style name="Title3Medium" parent="Widget.AppCompat.TextView" tools:ignore="UnusedResources">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/text_size_20sp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:lineSpacingExtra">@dimen/spacing_extra_title3</item>
+        <item name="android:letterSpacing">@dimen/letter_spacing_title3</item>
+        <item name="android:fontFeatureSettings">pnum</item>
+    </style>
+
+    <style name="Title4Bold" parent="Widget.AppCompat.TextView" tools:ignore="UnusedResources">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:lineSpacingExtra">@dimen/spacing_extra_title4</item>
+        <item name="android:letterSpacing">@dimen/letter_spacing_title4</item>
+        <item name="android:fontFeatureSettings">pnum</item>
+    </style>
+
+    <style name="Title4Medium" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:lineSpacingExtra">@dimen/spacing_extra_title4</item>
+        <item name="android:letterSpacing">@dimen/letter_spacing_title4</item>
+        <item name="android:fontFeatureSettings">pnum</item>
+    </style>
+
+    <style name="Title4Regular" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:lineSpacingExtra">@dimen/spacing_extra_title4</item>
+        <item name="android:letterSpacing">@dimen/letter_spacing_title4</item>
+        <item name="android:fontFeatureSettings">pnum</item>
+    </style>
+
+    <style name="CallOutBold" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:lineSpacingExtra">@dimen/spacing_extra_call_out</item>
+        <item name="android:letterSpacing">@dimen/letter_spacing_call_out</item>
+        <item name="android:fontFeatureSettings">pnum</item>
+    </style>
+
+    <style name="CallOutMedium" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:lineSpacingExtra">@dimen/spacing_extra_call_out</item>
+        <item name="android:letterSpacing">@dimen/letter_spacing_call_out</item>
+        <item name="android:fontFeatureSettings">pnum</item>
+    </style>
+
+    <style name="CallOutRegular" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:lineSpacingExtra">@dimen/spacing_extra_call_out</item>
+        <item name="android:letterSpacing">@dimen/letter_spacing_call_out</item>
+        <item name="android:fontFeatureSettings">pnum</item>
+    </style>
+
+    <style name="BodyBold" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/text_size_13sp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:lineSpacingExtra">@dimen/spacing_extra_body</item>
+        <item name="android:letterSpacing">@dimen/letter_spacing_body</item>
+        <item name="android:fontFeatureSettings">pnum</item>
+    </style>
+
+    <style name="BodyMedium" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/text_size_13sp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:lineSpacingExtra">@dimen/spacing_extra_body</item>
+        <item name="android:letterSpacing">@dimen/letter_spacing_body</item>
+        <item name="android:fontFeatureSettings">pnum</item>
+    </style>
+
+    <style name="BodyRegular" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/text_size_13sp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:lineSpacingExtra">@dimen/spacing_extra_body</item>
+        <item name="android:letterSpacing">@dimen/letter_spacing_body</item>
+        <item name="android:fontFeatureSettings">pnum</item>
+    </style>
+
+    <style name="PrimaryUnderline" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="android:textColor">@color/primary_purple</item>
+        <item name="android:lineSpacingExtra">@dimen/spacing_extra_body</item>
+        <item name="android:letterSpacing">@dimen/letter_spacing_body</item>
+        <item name="android:fontFeatureSettings">pnum</item>
+    </style>
+
+    <style name="BodyRegular.Auto">
+        <item name="android:maxLines">1</item>
+        <item name="autoSizeMaxTextSize">@dimen/text_size_13sp</item>
+        <item name="autoSizeMinTextSize">@dimen/text_size_8sp</item>
+        <item name="autoSizeStepGranularity">@dimen/text_size_1sp</item>
+        <item name="autoSizeTextType">uniform</item>
+    </style>
+
+    <style name="CaptionBold" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/text_size_12sp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:lineSpacingExtra">@dimen/spacing_extra_caption</item>
+        <item name="android:letterSpacing">@dimen/letter_spacing_caption</item>
+        <item name="android:fontFeatureSettings">pnum</item>
+    </style>
+
+    <style name="CaptionMedium" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/text_size_12sp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:lineSpacingExtra">@dimen/spacing_extra_caption</item>
+        <item name="android:letterSpacing">@dimen/letter_spacing_caption</item>
+        <item name="android:fontFeatureSettings">pnum</item>
+    </style>
+
+    <style name="CaptionRegular" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/text_size_12sp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:lineSpacingExtra">@dimen/spacing_extra_caption</item>
+        <item name="android:letterSpacing">@dimen/letter_spacing_caption</item>
+        <item name="android:fontFeatureSettings">pnum</item>
+    </style>
+
+    <style name="FootnoteBold" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/text_size_11sp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:lineSpacingExtra">@dimen/spacing_extra_footnote</item>
+        <item name="android:letterSpacing">@dimen/letter_spacing_footnote</item>
+        <item name="android:fontFeatureSettings">pnum</item>
+    </style>
+
+    <style name="FootnoteMedium" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/text_size_11sp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:lineSpacingExtra">@dimen/spacing_extra_footnote</item>
+        <item name="android:letterSpacing">@dimen/letter_spacing_footnote</item>
+        <item name="android:fontFeatureSettings">pnum</item>
+    </style>
+
+    <style name="FootnoteRegular" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/text_size_11sp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:lineSpacingExtra">@dimen/spacing_extra_footnote</item>
+        <item name="android:letterSpacing">@dimen/letter_spacing_footnote</item>
+        <item name="android:fontFeatureSettings">pnum</item>
+    </style>
+
+    <!-- TextView Variants -->
+
+    <style name="LargeTitleMedium.Auto">
+        <item name="android:maxLines">1</item>
+        <item name="autoSizeMaxTextSize">@dimen/text_size_34sp</item>
+        <item name="autoSizeMinTextSize">@dimen/text_size_13sp</item>
+        <item name="autoSizeStepGranularity">@dimen/text_size_1sp</item>
+        <item name="autoSizeTextType">uniform</item>
+
+    </style>
+
+    <style name="BodyMedium.Auto">
+        <item name="android:maxLines">1</item>
+        <item name="autoSizeMaxTextSize">@dimen/text_size_13sp</item>
+        <item name="autoSizeMinTextSize">@dimen/text_size_8sp</item>
+        <item name="autoSizeStepGranularity">@dimen/text_size_1sp</item>
+        <item name="autoSizeTextType">uniform</item>
+    </style>
+
+    <style name="Title1Medium.Auto">
+        <item name="autoSizeMaxTextSize">@dimen/text_size_28sp</item>
+        <item name="autoSizeMinTextSize">@dimen/text_size_13sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="autoSizeTextType">uniform</item>
+    </style>
+
+    <!--endregion -->
+
+    <!--region UI Component Styles -->
+
+    <style name="Checkbox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/text_size_12sp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:lineSpacingExtra">@dimen/spacing_extra_caption</item>
+        <item name="android:letterSpacing">@dimen/letter_spacing_caption</item>
+        <item name="android:gravity">top</item>
+        <item name="android:textAlignment">textStart</item>
+    </style>
+
+    <style name="Switch.Primary" parent="SwitchTheme">
+        <item name="android:theme">@style/SwitchTheme</item>
+    </style>
+
+    <style name="Switch.Purple" parent="SwitchTheme">
+        <item name="android:theme">@style/SwitchThemePurple</item>
+    </style>
+
+    <style name="Switch.Green" parent="SwitchTheme">
+        <item name="android:theme">@style/SwitchThemeGreen</item>
+    </style>
+
+    <style name="Switch.Blue" parent="SwitchTheme">
+        <item name="android:theme">@style/SwitchThemeBlue</item>
+    </style>
+
+    <style name="SwitchTheme" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/primary_purple</item>
+        <item name="colorSwitchThumbNormal">@color/white</item>
+        <item name="android:colorForeground">@color/light_mid_gray</item>
+    </style>
+
+    <style name="SwitchThemePurple" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/primary_purple</item>
+        <item name="colorSwitchThumbNormal">@color/white</item>
+        <item name="android:colorForeground">@color/light_mid_gray</item>
+    </style>
+
+    <style name="SwitchThemeGreen" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/primary_green</item>
+        <item name="colorSwitchThumbNormal">@color/white</item>
+        <item name="android:colorForeground">@color/light_mid_gray</item>
+    </style>
+
+    <style name="SwitchThemeBlue" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/primary_blue</item>
+        <item name="colorSwitchThumbNormal">@color/white</item>
+        <item name="android:colorForeground">@color/light_mid_gray</item>
+    </style>
+
+    <style name="RadioButton.Primary" parent="Widget.AppCompat.CompoundButton.RadioButton" tools:ignore="UnusedResources">
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:button">@drawable/bg_radio_button</item>
+    </style>
+
+    <style name="RadioButton.Green" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:button">@drawable/bg_radio_button_green</item>
+    </style>
+
+    <style name="CardView">
+        <item name="cardCornerRadius">@dimen/radius_10dp</item>
+        <item name="backgroundColor">@color/card_view_blur</item>
+    </style>
+
+    <style name="CardView.Circle">
+        <item name="cornerSize">50%</item>
+    </style>
+    <!--endregion -->
+
+    <!--region Base EditText -->
+
+    <style name="EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="android:lineSpacingExtra">@dimen/spacing_extra_call_out</item>
+        <item name="android:letterSpacing">@dimen/letter_spacing_call_out</item>
+        <item name="android:paddingStart">@dimen/padding_16dp</item>
+        <item name="android:paddingEnd">@dimen/padding_16dp</item>
+        <item name="android:paddingTop">@dimen/padding_14dp</item>
+        <item name="android:paddingBottom">@dimen/padding_14dp</item>
+        <item name="android:textColorHint">@color/mid_gray</item>
+        <item name="android:fontFeatureSettings">pnum</item>
+    </style>
+
+    <!-- endregion -->
+
+    <!--region EditText Styles -->
+
+    <style name="EditText.Regular">
+        <item name="android:background">@drawable/bg_default_edit_text_regular</item>
+        <item name="android:textColor">@color/text_gray</item>
+    </style>
+
+    <style name="EditText.Search">
+        <item name="android:background">@drawable/bg_default_edit_text_search</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:textColorHint">@color/text_gray</item>
+        <item name="android:drawableLeft">@drawable/ic_search</item>
+        <item name="android:drawablePadding">@dimen/padding_10dp</item>
+        <item name="drawableTint">@color/text_gray</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="EditText.RightIconRegular">
+        <item name="android:background">@drawable/bg_default_edit_text_regular</item>
+        <item name="android:textColor">@color/coal</item>
+    </style>
+
+    <style name="EditText.Custom">
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/text_gray</item>
+    </style>
+
+    <style name="EditText.RightIconGreen" tools:ignore="UnusedResources">
+        <item name="android:background">@drawable/bg_edittext_green_corner_radius_8dp</item>
+        <item name="android:textColor">@color/coal</item>
+    </style>
+
+    <style name="EditText.RightIconError">
+        <item name="android:background">@drawable/bg_default_edit_text_error</item>
+        <item name="android:textColor">@color/coal</item>
+    </style>
+
+    <style name="EditText.RightIconBlue">
+        <item name="android:background">@drawable/bg_default_edit_text_selected</item>
+        <item name="android:textColor">@color/coal</item>
+    </style>
+
+    <!-- endregion -->
+
+    <!--region SnackBar Style -->
+
+    <style name="Widget.SnackBar" parent="Widget.MaterialComponents.Snackbar">
+        <item name="android:layout_margin">0dp</item>
+    </style>
+
+    <!-- endregion -->
+
+    <!-- Base Clickable Layout -->
+
+    <style name="ClickableLayout">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="ClickableLayout.Top">
+        <item name="android:background">@drawable/bg_clickable_white_top_radius_10</item>
+    </style>
+
+    <style name="ClickableLayout.Bottom">
+        <item name="android:background">@drawable/bg_clickable_white_bottom_radius_10</item>
+    </style>
+
+    <style name="ClickableLayout.All">
+        <item name="android:background">@drawable/bg_clickable_white_all_radius_10</item>
+    </style>
+
+    <style name="ClickableLayout.Center">
+        <item name="android:background">@drawable/bg_menu_row_white_no_radius</item>
+    </style>
+
+
+
+    <!-- endregion -->
+
+    <style name="BottomNavigationText">
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:textSize">@dimen/text_size_9sp</item>
+    </style>
+
+</resources>

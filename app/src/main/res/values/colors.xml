@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Primary Colors -->
+    <color name="primary_purple">#763AC7</color>
+    <color name="primary_purple_light" tools:ignore="UnusedResources">#B267FE</color>
+    <color name="primary_blue" tools:ignore="UnusedResources">#0055FF</color>
+    <color name="primary_blue_light" tools:ignore="UnusedResources">#136AFF</color>
+    <color name="primary_purple_20">#407E01FD</color>
+
+    <!-- Neutral Colors -->
+    <color name="black">#15151A</color>
+    <color name="black_p1" tools:ignore="UnusedResources">#191E25</color>
+    <color name="coal">#343A40</color>
+    <color name="text_gray">#70798C</color>
+    <color name="dark_gray">#BFC4CD</color>
+    <color name="mid_gray">#D0D3DA</color>
+    <color name="light_mid_gray">#E3E4E9</color>
+    <color name="light_gray">#ECEDF0</color>
+    <color name="whitish">#F1F3F5</color>
+    <color name="whitish_01">#19f3f4f9</color>
+    <color name="whitish_02">#f3f4f9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_opacity_60">#99FFFFFF</color>
+
+    <!-- Semantic Colors -->
+    <color name="green">#90DB06</color>
+    <color name="blue">#5487F7</color>
+    <color name="yellow">#fdb827</color>
+    <color name="red">#FF3C2B</color>
+
+    <!-- Other Colors -->
+    <color name="primary_green">#6fb502</color> <!-- Finansman Primary Color -->
+    <color name="secondary_green">#98d801</color> <!-- Finansman Gradient End Color -->
+
+    <color name="action_orange">#ffa600</color>
+    <color name="action_orange2">#ff7c2f</color>
+    <color name="action_purple">#b632e0</color>
+    <color name="action_red">#ff4a58</color>
+    <color name="action_pink">#f600b4</color>
+    <color name="action_pink2">#ff0085</color>
+
+    <color name="green_20">#3398d801</color> <!-- Dot Indicator Unselected Color -->
+    <color name="primary_blue_25" tools:ignore="UnusedResources">#400055FF</color>
+    <color name="primary_blue_40" tools:ignore="UnusedResources">#660055FF</color>
+    <color name="card_view_blur">#13000000</color>
+    <color name="cyan">#00DBFF</color>
+    <color name="gray">#E5E7Eb</color>
+    <color name="white_80">#CCFFFFFF</color>
+    <color name="white_15">#26FFFFFF</color>
+    <color name="white_20">#33FFFFFF</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="white_60">#9AFFFFFF</color>
+    <color name="blue_2" tools:ignore="UnusedResources">#008eff</color>
+    <color name="light_gray_20">#33ECEDF0</color>
+    <color name="light_green">#6140b72c</color> <!-- Switch -->
+    <color name="light_solid_green">#40b72c</color>
+    <color name="light_red">#61FF3C2B</color>
+    <color name="primary_blue_20">#330055FF</color>
+    <color name="white_25">#40FFFFFF</color>
+    <color name="purple_light">#B267FE</color>
+    <color name="purple_dark">#5900B4</color>
+    <color name="purple_5">#0D7E01FD</color>
+    <color name="purple_01">#9354e8</color>
+    <color name="purple_02">#a766ff</color>
+    <color name="purple_03">#7539c6</color>
+    <color name="a101">#01abc8</color>
+    <color name="light_green_10">#1940b72c</color>
+    <color name="almost_white">#f5f5f5</color>
+    <color name="light_white">#F4F3F8</color>
+
+</resources>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Size -->
+    <dimen name="size_0dp">0dp</dimen>
+    <dimen name="size_0.8dp">0.8dp</dimen>
+    <dimen name="size_1dp">1dp</dimen>
+    <dimen name="size_2dp">2dp</dimen>
+    <dimen name="size_4dp">4dp</dimen>
+    <dimen name="size_5dp">5dp</dimen>
+    <dimen name="size_6dp">6dp</dimen>
+    <dimen name="size_8dp">8dp</dimen>
+    <dimen name="size_10dp">10dp</dimen>
+    <dimen name="size_12dp">12dp</dimen>
+    <dimen name="size_13dp">13dp</dimen>
+    <dimen name="size_14dp">14dp</dimen>
+    <dimen name="size_16dp">16dp</dimen>
+    <dimen name="size_18dp">18dp</dimen>
+    <dimen name="size_20dp">20dp</dimen>
+    <dimen name="size_22dp">22dp</dimen>
+    <dimen name="size_24dp">24dp</dimen>
+    <dimen name="size_28dp">28dp</dimen>
+    <dimen name="size_32dp">32dp</dimen>
+    <dimen name="size_34dp">34dp</dimen>
+    <dimen name="size_38dp">38dp</dimen>
+    <dimen name="size_40p" tools:ignore="UnusedResources">40dp</dimen>
+    <dimen name="size_41dp" tools:ignore="UnusedResources">41dp</dimen>
+    <dimen name="size_42dp">42dp</dimen>
+    <dimen name="size_44dp">44dp</dimen>
+    <dimen name="size_48dp">48dp</dimen>
+    <dimen name="size_56dp">56dp</dimen>
+    <dimen name="size_64dp">64dp</dimen>
+    <dimen name="size_60dp">60dp</dimen>
+    <dimen name="size_66dp">66dp</dimen>
+    <dimen name="size_68dp">68dp</dimen>
+    <dimen name="size_69dp">69dp</dimen>
+    <dimen name="size_70dp" tools:ignore="UnusedResources">70dp</dimen>
+    <dimen name="size_72dp">72dp</dimen>
+    <dimen name="size_74dp">74dp</dimen>
+    <dimen name="size_78dp">78dp</dimen>
+    <dimen name="size_80dp">80dp</dimen>
+    <dimen name="size_85dp">85dp</dimen>
+    <dimen name="size_94dp">94dp</dimen>
+    <dimen name="size_95dp">95dp</dimen>
+    <dimen name="size_100dp">100dp</dimen>
+    <dimen name="size_104dp">104dp</dimen>
+    <dimen name="size_105dp" tools:ignore="UnusedResources">105dp</dimen>
+    <dimen name="size_106dp">106dp</dimen>
+    <dimen name="size_108dp">108dp</dimen>
+    <dimen name="size_110dp">110dp</dimen>
+    <dimen name="size_114dp">114dp</dimen>
+    <dimen name="size_118dp">118dp</dimen>
+    <dimen name="size_126dp">126dp</dimen>
+    <dimen name="size_128dp">128dp</dimen>
+    <dimen name="size_130dp">130dp</dimen>
+    <dimen name="size_138dp">138dp</dimen>
+    <dimen name="size_140dp">140dp</dimen>
+    <dimen name="size_143dp">143dp</dimen>
+    <dimen name="size_144dp">144dp</dimen>
+    <dimen name="size_148dp">148dp</dimen>
+    <dimen name="size_150dp">150dp</dimen>
+    <dimen name="size_160dp">160dp</dimen>
+    <dimen name="size_165dp">150dp</dimen>
+    <dimen name="size_180dp">180dp</dimen>
+    <dimen name="size_192dp">192dp</dimen>
+    <dimen name="size_200dp">200dp</dimen>
+    <dimen name="size_210dp">210dp</dimen>
+    <dimen name="size_216dp">216dp</dimen>
+    <dimen name="size_220dp" tools:ignore="UnusedResources">220dp</dimen>
+    <dimen name="size_224dp">224dp</dimen>
+    <dimen name="size_231dp">231dp</dimen>
+    <dimen name="size_240dp">240dp</dimen>
+    <dimen name="size_290dp">290dp</dimen>
+    <dimen name="size_350dp">350dp</dimen>
+    <dimen name="size_360dp" tools:ignore="UnusedResources">360dp</dimen>
+
+    <!-- Text Size -->
+    <dimen name="text_size_1sp">1sp</dimen>
+    <dimen name="text_size_2sp" tools:ignore="UnusedResources">2sp</dimen>
+    <dimen name="text_size_8sp">8sp</dimen>
+    <dimen name="text_size_9sp">9sp</dimen>
+    <dimen name="text_size_11sp">11sp</dimen>
+    <dimen name="text_size_12sp">12sp</dimen>
+    <dimen name="text_size_13sp">13sp</dimen>
+    <dimen name="text_size_14sp">14sp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_18sp">18sp</dimen>
+    <dimen name="text_size_19sp">19sp</dimen>
+    <dimen name="text_size_20sp">20sp</dimen>
+    <dimen name="text_size_22sp">22sp</dimen>
+    <dimen name="text_size_24sp">24sp</dimen>
+    <dimen name="text_size_28sp">28sp</dimen>
+    <dimen name="text_size_34sp">34sp</dimen>
+    <dimen name="text_size_40sp">40sp</dimen>
+    <dimen name="text_size_48sp">48sp</dimen>
+
+    <!-- Margin -->
+    <dimen name="margin_0dp">0dp</dimen>
+    <dimen name="margin_1dp">1dp</dimen>
+    <dimen name="margin_2dp">2dp</dimen>
+    <dimen name="margin_3dp">3dp</dimen>
+    <dimen name="margin_4dp">4dp</dimen>
+    <dimen name="margin_5dp">5dp</dimen>
+    <dimen name="margin_6dp">6dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_9dp">9dp</dimen>
+    <dimen name="margin_10dp" tools:ignore="UnusedResources">10dp</dimen>
+    <dimen name="margin_11dp">11dp</dimen>
+    <dimen name="margin_12dp">12dp</dimen>
+    <dimen name="margin_13dp">13dp</dimen>
+    <dimen name="margin_14dp">14dp</dimen>
+    <dimen name="margin_15dp">15dp</dimen>
+    <dimen name="margin_16dp">16dp</dimen>
+    <dimen name="margin_17dp">17dp</dimen>
+    <dimen name="margin_18dp">18dp</dimen>
+    <dimen name="margin_19dp">19dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="margin_21dp">21dp</dimen>
+    <dimen name="margin_22dp">22dp</dimen>
+    <dimen name="margin_23dp" tools:ignore="UnusedResources">23dp</dimen>
+    <dimen name="margin_24dp">24dp</dimen>
+    <dimen name="margin_25dp">25dp</dimen>
+    <dimen name="margin_28dp" tools:ignore="UnusedResources">28dp</dimen>
+    <dimen name="margin_29dp">29dp</dimen>
+    <dimen name="margin_30dp">30dp</dimen>
+    <dimen name="margin_32dp">32dp</dimen>
+    <dimen name="margin_34dp">34dp</dimen>
+    <dimen name="margin_36dp">36dp</dimen>
+    <dimen name="margin_38dp">38dp</dimen>
+    <dimen name="margin_40dp">40dp</dimen>
+    <dimen name="margin_44dp">44dp</dimen>
+    <dimen name="margin_45dp">45dp</dimen>
+    <dimen name="margin_46dp" tools:ignore="UnusedResources">46dp</dimen>
+    <dimen name="margin_48dp">48dp</dimen>
+    <dimen name="margin_50dp">50dp</dimen>
+    <dimen name="margin_52dp">52dp</dimen>
+    <dimen name="margin_56dp">56dp</dimen>
+    <dimen name="margin_60dp" tools:ignore="UnusedResources">60dp</dimen>
+    <dimen name="margin_64dp">64dp</dimen>
+    <dimen name="margin_68dp">68dp</dimen>
+    <dimen name="margin_72dp">72dp</dimen>
+    <dimen name="margin_74dp" tools:ignore="UnusedResources">74dp</dimen>
+    <dimen name="margin_76dp">76dp</dimen>
+    <dimen name="margin_78dp">78dp</dimen>
+    <dimen name="margin_81dp">81dp</dimen>
+    <dimen name="margin_85dp">85dp</dimen>
+    <dimen name="margin_90dp">90dp</dimen>
+    <dimen name="margin_93dp">93dp</dimen>
+    <dimen name="margin_96dp">96dp</dimen>
+    <dimen name="margin_100dp">100dp</dimen>
+    <dimen name="margin_109dp">109dp</dimen>
+    <dimen name="margin_112dp">112dp</dimen>
+    <dimen name="margin_128dp">128dp</dimen>
+    <dimen name="margin_172dp" tools:ignore="UnusedResources">172dp</dimen>
+    <dimen name="margin_minus_36dp">-36dp</dimen>
+    <dimen name="margin_minus_48dp">-48dp</dimen>
+
+    <!-- Padding -->
+    <dimen name="padding_0dp">0dp</dimen>
+    <dimen name="padding_1dp">1dp</dimen>
+    <dimen name="padding_2dp">2dp</dimen>
+    <dimen name="padding_3dp">3dp</dimen>
+    <dimen name="padding_4dp">4dp</dimen>
+    <dimen name="padding_6dp">6dp</dimen>
+    <dimen name="padding_7dp" tools:ignore="UnusedResources">7dp</dimen>
+    <dimen name="padding_8dp">8dp</dimen>
+    <dimen name="padding_10dp">10dp</dimen>
+    <dimen name="padding_12dp">12dp</dimen>
+    <dimen name="padding_13dp" tools:ignore="UnusedResources">13dp</dimen>
+    <dimen name="padding_14dp">14dp</dimen>
+    <dimen name="padding_16dp">16dp</dimen>
+    <dimen name="padding_17dp" tools:ignore="UnusedResources">17dp</dimen>
+    <dimen name="padding_18dp">18dp</dimen>
+    <dimen name="padding_20dp">20dp</dimen>
+    <dimen name="padding_24dp">24dp</dimen>
+    <dimen name="padding_22dp">22dp</dimen>
+    <dimen name="padding_32dp">32dp</dimen>
+    <dimen name="padding_48dp">48dp</dimen>
+    <dimen name="padding_56dp" tools:ignore="UnusedResources">56dp</dimen>
+    <dimen name="padding_64dp">64dp</dimen>
+    <dimen name="padding_90dp">90dp</dimen>
+    <dimen name="padding_96dp">96dp</dimen>
+    <dimen name="padding_124dp">124dp</dimen>
+
+    <!-- Radius -->
+    <dimen name="radius_0dp" tools:ignore="UnusedResources">0dp</dimen>
+    <dimen name="radius_2dp">2dp</dimen>
+    <dimen name="radius_4dp">4dp</dimen>
+    <dimen name="radius_6dp" tools:ignore="UnusedResources">6dp</dimen>
+    <dimen name="radius_7dp">7dp</dimen>
+    <dimen name="radius_8dp">8dp</dimen>
+    <dimen name="radius_10dp">10dp</dimen>
+    <dimen name="radius_12dp">12dp</dimen>
+    <dimen name="radius_16dp">16dp</dimen>
+    <dimen name="radius_22dp">22dp</dimen>
+    <dimen name="radius_28dp">28dp</dimen>
+    <dimen name="radius_32dp" tools:ignore="UnusedResources">32dp</dimen>
+    <dimen name="radius_34dp">34dp</dimen>
+
+    <!-- Letter Spacing -->
+    <dimen name="letter_spacing_title3" tools:ignore="UnusedResources">0.0025</dimen>
+    <dimen name="letter_spacing_title4">0.0062</dimen>
+    <dimen name="letter_spacing_call_out">0.0107</dimen>
+    <dimen name="letter_spacing_body">0.0192</dimen>
+    <dimen name="letter_spacing_caption">0.0333</dimen>
+    <dimen name="letter_spacing_footnote">0.0454</dimen>
+
+    <!-- Line Spacing Extra -->
+    <dimen name="spacing_extra_large_title">6dp</dimen>
+    <dimen name="spacing_extra_title1">5dp</dimen>
+    <dimen name="spacing_extra_title2">3dp</dimen>
+    <dimen name="spacing_extra_title3" tools:ignore="UnusedResources">4dp</dimen>
+    <dimen name="spacing_extra_title4">3dp</dimen>
+    <dimen name="spacing_extra_call_out">2dp</dimen>
+    <dimen name="spacing_extra_body">5dp</dimen>
+    <dimen name="spacing_extra_caption">4dp</dimen>
+    <dimen name="spacing_extra_footnote">4dp</dimen>
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="UnusedIds">
+
+    <item
+        android:id="@+id/dashboard_finance"
+        android:icon="@drawable/ic_menu_home"
+        android:title="@string/menu_home" />
+
+    <item
+        android:id="@+id/my_loans"
+        android:icon="@drawable/ic_menu_loans"
+        android:title="@string/menu_my_loans" />
+
+    <item
+        android:id="@+id/placeholder"
+        android:enabled="false"
+        android:title="@string/qr_transactions" />
+
+    <item
+        android:id="@+id/financing_calculator"
+        android:icon="@drawable/ic_calculator"
+        android:title="@string/menu_calculator" />
+
+    <item
+        android:id="@+id/actions_finance"
+        android:icon="@drawable/ic_menu_all_actions"
+        android:title="@string/menu_all_actions" />
+
+</menu>
