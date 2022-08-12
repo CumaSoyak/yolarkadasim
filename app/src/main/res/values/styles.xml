@@ -464,11 +464,7 @@
         <item name="android:button">@drawable/bg_radio_button</item>
     </style>
 
-    <style name="RadioButton.Green" parent="Widget.AppCompat.CompoundButton.RadioButton">
-        <item name="android:minWidth">0dp</item>
-        <item name="android:minHeight">0dp</item>
-        <item name="android:button">@drawable/bg_radio_button_green</item>
-    </style>
+
 
     <style name="CardView">
         <item name="cardCornerRadius">@dimen/radius_10dp</item>
@@ -499,45 +495,16 @@
 
     <!--region EditText Styles -->
 
-    <style name="EditText.Regular">
-        <item name="android:background">@drawable/bg_default_edit_text_regular</item>
-        <item name="android:textColor">@color/text_gray</item>
-    </style>
 
-    <style name="EditText.Search">
-        <item name="android:background">@drawable/bg_default_edit_text_search</item>
-        <item name="android:textColor">@color/text_gray</item>
-        <item name="android:textColorHint">@color/text_gray</item>
-        <item name="android:drawableLeft">@drawable/ic_search</item>
-        <item name="android:drawablePadding">@dimen/padding_10dp</item>
-        <item name="drawableTint">@color/text_gray</item>
-        <item name="android:singleLine">true</item>
-    </style>
 
-    <style name="EditText.RightIconRegular">
-        <item name="android:background">@drawable/bg_default_edit_text_regular</item>
-        <item name="android:textColor">@color/coal</item>
-    </style>
 
     <style name="EditText.Custom">
         <item name="android:background">@null</item>
         <item name="android:textColor">@color/text_gray</item>
     </style>
 
-    <style name="EditText.RightIconGreen" tools:ignore="UnusedResources">
-        <item name="android:background">@drawable/bg_edittext_green_corner_radius_8dp</item>
-        <item name="android:textColor">@color/coal</item>
-    </style>
 
-    <style name="EditText.RightIconError">
-        <item name="android:background">@drawable/bg_default_edit_text_error</item>
-        <item name="android:textColor">@color/coal</item>
-    </style>
 
-    <style name="EditText.RightIconBlue">
-        <item name="android:background">@drawable/bg_default_edit_text_selected</item>
-        <item name="android:textColor">@color/coal</item>
-    </style>
 
     <!-- endregion -->
 
@@ -556,21 +523,8 @@
         <item name="android:focusable">true</item>
     </style>
 
-    <style name="ClickableLayout.Top">
-        <item name="android:background">@drawable/bg_clickable_white_top_radius_10</item>
-    </style>
 
-    <style name="ClickableLayout.Bottom">
-        <item name="android:background">@drawable/bg_clickable_white_bottom_radius_10</item>
-    </style>
 
-    <style name="ClickableLayout.All">
-        <item name="android:background">@drawable/bg_clickable_white_all_radius_10</item>
-    </style>
-
-    <style name="ClickableLayout.Center">
-        <item name="android:background">@drawable/bg_menu_row_white_no_radius</item>
-    </style>
 
 
 
@@ -580,6 +534,21 @@
         <item name="fontFamily">@font/roboto_regular</item>
         <item name="android:textColor">@color/text_gray</item>
         <item name="android:textSize">@dimen/text_size_9sp</item>
+    </style>
+
+    <style name="CustomBottomSheetDialog" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheet</item>
+    </style>
+    <style name="CustomBottomSheet" parent="Widget.MaterialComponents.BottomSheet">
+        <item name="shapeAppearanceOverlay">@style/CustomShapeAppearanceBottomSheetDialog</item>
+    </style>
+
+    <style name="CustomShapeAppearanceBottomSheetDialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">16dp</item>
+        <item name="cornerSizeTopLeft">16dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
     </style>
 
 </resources>

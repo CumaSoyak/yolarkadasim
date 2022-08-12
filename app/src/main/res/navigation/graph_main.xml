@@ -3,14 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/graph_main"
-    app:startDestination="@id/dashboard_finance"
+    app:startDestination="@id/homeFragment"
     tools:ignore="UnusedIds">
 
-    <!-- Bottom Navigation Fragments -->
-    <fragment
-        android:id="@+id/dashboard_finance"
-        >
 
-    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="roadfriend.app.ui.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home" />
 
 </navigation>
