@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="roadfriend.app.extension.StringExtsKt" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whitish"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/margin_24dp"
+        android:paddingBottom="@dimen/margin_24dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clOriginFrom"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_24dp"
+                android:background="@drawable/bg_white_corner">
+
+                <LinearLayout
+                    android:id="@+id/llOriginContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tvOriginTop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_16dp"
+                        android:fontFamily="@font/inter_600"
+                        android:lineSpacingExtra="1sp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        tools:text='Nereden' />
+
+                    <TextView
+                        android:id="@+id/tvOriginMiddle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/inter_400"
+                        android:lineSpacingExtra="1sp"
+                        android:maxLines="2"
+                        android:textColor="@color/light_gray"
+                        android:textSize="14sp"
+                        tools:text="Otel, Havalimanı veya Adres giriniz" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clDestinationTo"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:layout_below="@id/clOriginFrom"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_white_corner">
+
+                <LinearLayout
+                    android:id="@+id/llDestinationContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tvDestinationTop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_16dp"
+                        android:fontFamily="@font/inter_600"
+                        android:lineSpacingExtra="1sp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        tools:text="Nereye" />
+
+                    <TextView
+                        android:id="@+id/tvDestinationMiddle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/inter_400"
+                        android:lineSpacingExtra="1sp"
+                        android:maxLines="2"
+                        android:textColor="@color/light_gray"
+                        android:textSize="14sp"
+                        tools:text="Otel, Havalimanı veya Adres giriniz" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <FrameLayout
+                android:id="@+id/fl_change_destinations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="24dp">
+
+                <View
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_android" />
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llDateContainer"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:background="@drawable/bg_white_corner"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clOriginDateContainer"
+                android:layout_width="0dp"
+                android:layout_height="92dp"
+                android:layout_weight="2">
+
+                <TextView
+                    android:id="@+id/tvOriginDateHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_16dp"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:fontFamily="@font/inter_600"
+                    android:text='@{StringExtsKt.get("biletdukkani_home_input_placeholder_departureDate")}'
+                    android:textColor="@color/grayscale_70"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Gidiş Tarihi" />
+
+                <TextView
+                    android:id="@+id/tvOriginDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_16dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/inter_800"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="32sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvOriginDateHeader"
+                    tools:text="12" />
+
+                <TextView
+                    android:id="@+id/tvOriginMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:fontFamily="@font/inter_400"
+                    android:textColor="@color/grayscale_70"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@id/tvOriginDay"
+                    app:layout_constraintTop_toBottomOf="@id/tvOriginDateHeader"
+                    tools:text="Ağustos" />
+
+                <TextView
+                    android:id="@+id/tvOriginDayOfWeek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:fontFamily="@font/inter_400"
+                    android:textColor="@color/grayscale_70"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@id/tvOriginDay"
+                    app:layout_constraintTop_toBottomOf="@id/tvOriginMonth"
+                    tools:text="Perşembe" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="@dimen/margin_medium"
+                android:background="@color/gray" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clDestinationDateContainer"
+                android:layout_width="0dp"
+                android:layout_height="92dp"
+                android:layout_weight="1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clDestinationDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tvDestinationDateHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_16dp"
+                        android:layout_marginTop="@dimen/margin_16dp"
+                        android:fontFamily="@font/inter_600"
+                        android:text='@{StringExtsKt.get("biletdukkani_transfer_clock_input_placeholder")}'
+                        android:textColor="@color/grayscale_70"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="Saat" />
+
+                    <TextView
+                        android:id="@+id/txtClock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_16dp"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/inter_800"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="32sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvDestinationDateHeader"
+                        tools:text="18" />
+
+                    <TextView
+                        android:id="@+id/txtMinute"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/grayscale_70"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/txtClock"
+                        app:layout_constraintStart_toEndOf="@+id/txtClock"
+                        tools:text=":00" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvTransferPassengers"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:background="@drawable/bg_white_corner"
+            android:drawablePadding="@dimen/margin_16dp"
+            android:fontFamily="@font/inter_600"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="@dimen/margin_16dp"
+            android:textColor="@color/dark_blue"
+            android:textSize="14sp"
+            app:drawableStartCompat="@drawable/ic_android"
+            app:drawableTint="@color/dark_blue"
+            tools:text="1 Yolcu / Ekonomi" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnContinue"
+            style="@style/Button.XSmall"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:text='@{StringExtsKt.get("biletdukkani_transfer_search_button_text")}'
+            tools:text="Transfer Ara" />
+    </LinearLayout>
+</layout>

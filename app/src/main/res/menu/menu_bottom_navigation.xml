@@ -4,29 +4,25 @@
     tools:ignore="UnusedIds">
 
     <item
-        android:id="@+id/dashboard_finance"
+        android:id="@+id/dashboard_home"
         android:icon="@drawable/ic_launcher_background"
-        android:title="@string/androidx_startup" />
+        android:title="@string/dashboard_home" />
 
     <item
-        android:id="@+id/my_loans"
+        android:id="@+id/dashboard_bid"
         android:icon="@drawable/ic_launcher_background"
-        android:title="@string/androidx_startup"  />
+        android:title="@string/dashboard_bid"  />
 
     <item
-        android:id="@+id/placeholder"
+        android:id="@+id/dashboard_chat"
         android:enabled="false"
         android:icon="@drawable/ic_launcher_background"
-        android:title="@string/androidx_startup"  />
+        android:title="@string/dashboard_chat"  />
 
     <item
-        android:id="@+id/financing_calculator"
+        android:id="@+id/dashboard_profile"
         android:icon="@drawable/ic_launcher_background"
-        android:title="@string/androidx_startup"  />
+        android:title="@string/dashboard_profile"  />
 
-    <item
-        android:id="@+id/actions_finance"
-        android:icon="@drawable/ic_launcher_background"
-        android:title="@string/androidx_startup"  />
 
 </menu>

@@ -3,14 +3,65 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/graph_main"
-    app:startDestination="@id/homeFragment"
+    app:startDestination="@id/dashboard_home"
     tools:ignore="UnusedIds">
 
 
+    <!-- dashboard_home   -->
     <fragment
-        android:id="@+id/homeFragment"
+        android:id="@+id/dashboard_home"
         android:name="roadfriend.app.ui.home.HomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home" />
+
+    <!-- dashboard_bid -->
+    <fragment
+        android:id="@+id/dashboard_bid"
+        android:name="roadfriend.app.ui.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home" />
+
+    <!-- dashboard_chat -->
+    <fragment
+        android:id="@+id/dashboard_chat"
+        android:name="roadfriend.app.ui.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home" />
+
+    <!-- dashboard_profile -->
+    <fragment
+        android:id="@+id/dashboard_profile"
+        android:name="roadfriend.app.ui.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_dashboard_profile_to_loginOrRegisterFragment"
+            app:destination="@id/loginOrRegisterFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/loginOrRegisterFragment"
+        android:name="roadfriend.app.ui.profile.loginOrRegister.LoginOrRegisterFragment"
+        android:label="LoginOrRegisterFragment"
+        tools:layout="@layout/login_or_register_fragment" >
+        <action
+            android:id="@+id/action_loginOrRegisterFragment_to_passwordFragment"
+            app:destination="@id/passwordFragment" />
+        <action
+            android:id="@+id/action_loginOrRegisterFragment_to_continueWithSocialFragment"
+            app:destination="@id/continueWithSocialFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/passwordFragment"
+        android:name="roadfriend.app.ui.profile.password.PasswordFragment"
+        android:label="PasswordFragment" />
+
+    <fragment
+        android:id="@+id/continueWithSocialFragment"
+        android:name="roadfriend.app.ui.profile.continueWithSocial.ContinueWithSocialFragment"
+        android:label="ContinueWithSocialFragment" />
+
 
 </navigation>

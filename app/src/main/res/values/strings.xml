@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Yol Arkadaşım</string>
+    <string name="dashboard_home">Anasayfa</string>
+    <string name="dashboard_bid">İlan ver</string>
+    <string name="dashboard_chat">Mesaj</string>
+    <string name="dashboard_profile">Profil</string>
 </resources>
